@@ -7,7 +7,7 @@ int main()
 //	struct node* node2 = NULL;
 	node = cbuild123();//cbuild123 replace 1 2 3 by 3 5 10respectively
 	//node2 = cbuild123();
-	node->left->left = NewNode(0);
+	node->left->left = NewNode(1);
 //	node->left =NewNode(0);
 	//node->right =NewNode(0);
 	//node2->left->left = NewNode(0);
@@ -23,15 +23,20 @@ int main()
 //	printf("%d\n",minValue(node));
 //	mirror(node);
 	//doubleTree(node);
-	printTree(node);
-	printf("\n");
+//	printTree(node);
+//	printf("\n");
 //	printPostorder(node);
 //	printf("%d\n",hasPathSum(node,25));
 //	printf("\n");	
 //	printf("%d\n",sameTree(node,node2));
 	if(isBST(node))
-		printf("True\n");
-	else printf("False\n");
+		printf("isBST:   True\n");
+	else printf("isBST:   False\n");
+	printf("\n");
+	if(isBST2(node))
+              printf("isBST2:   True\n");
+	else printf("isBST2:   False\n");
+
 //	printf("min %d\n",minvalue(node));
 //	printf("max %d\n",maxvalue(node));
 //	printPaths(node);

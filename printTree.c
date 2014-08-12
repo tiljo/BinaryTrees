@@ -1,7 +1,7 @@
 
 void printTree(struct node* node)
 {
-	if(node == 0) return;
+	if(node == NULL) return;
 	else{
 		printTree(node->left);
 		printf("%d	",node->data);
